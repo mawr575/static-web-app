@@ -9,7 +9,7 @@ pipeline {
         NGINX_SERVER_PATH = '/usr/share/nginx/html/'
     }
 
-    trigger {
+    triggers {
         githubPush()
     }
 
