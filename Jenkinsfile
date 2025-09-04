@@ -9,6 +9,10 @@ pipeline {
         NGINX_SERVER_PATH = '/usr/share/nginx/html/'
     }
 
+    trigger {
+        githubPush()
+    }
+
     stages {
         stage('Git Checkout') {
             steps {
